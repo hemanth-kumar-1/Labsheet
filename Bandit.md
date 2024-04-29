@@ -37,3 +37,12 @@ so no chance to stay in it
 so we will combine the cat command when we use ssh command itself.
 
 password = `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`
+
+## Level -19
+After connecting to the server we will see a 32 bit executable file.
+
+we will see that it is a level20 user file, so we can acess the files of level20 user.
+
+cmd = `./bandit20-do  cat /etc/bandit_pass/bandit20`
+
+password = `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`
