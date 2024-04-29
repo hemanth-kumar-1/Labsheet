@@ -41,7 +41,7 @@ password = `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`
 ## Level -19
 After connecting to the server we will see a 32 bit executable file.
 
-we will see that it is a level20 user file, so we can acess the files of level20 user.
+we will see that it is a level20 user file, and it is setuid file, so we can acess the files as level20 user.
 
 cmd = `./bandit20-do  cat /etc/bandit_pass/bandit20`
 
