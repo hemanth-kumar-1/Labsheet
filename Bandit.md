@@ -46,3 +46,18 @@ we will see that it is a level20 user file, and it is setuid file, so we can ace
 cmd = `./bandit20-do  cat /etc/bandit_pass/bandit20`
 
 password = `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`
+
+## Level -20
+connect to the server with two different terminals.
+
+on one terminal connect using nc command with ur desired port number(nc -nlvp 8888)
+
+on the other terminal run the excutable file using the same port number(./suconnect 8888)
+
+on the first terminal send the password of the previous level.
+
+if it was correct the password for the next level will be displayed.
+
+password = `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`
+
+
