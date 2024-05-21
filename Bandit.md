@@ -61,3 +61,14 @@ if it was correct the password for the next level will be displayed.
 password = `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`
 
 ## Level -21
+After connecting to the server we should move to the directory specified in the question
+
+we will there see list of files being there when u open a file named cronjob_bandit22
+
+we will see a executable file of cronjob_bandit22.sh and its path
+
+open the file using the path and then we should open another file which is stored in tmp directory.
+
+password = `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`
+
+## Level -22
