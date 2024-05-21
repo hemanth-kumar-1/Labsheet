@@ -72,3 +72,10 @@ open the file using the path and then we should open another file which is store
 password = `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`
 
 ## Level -22
+Same as above until u open cronjob_bandit23 file.
+
+Then we see that we need to create md5sum of the text "I am user username", here username is bandit23.
+
+then we should use that md5sum value to open the file in the tmp directory.
+
+password = `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`
