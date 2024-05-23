@@ -79,3 +79,20 @@ Then we see that we need to create md5sum of the text "I am user username", here
 then we should use that md5sum value to open the file in the tmp directory.
 
 password = `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`
+
+## Level -23
+same we should move to cron directory and open cronjob_bandit24 file.
+
+when we open executable file(.sh extension) inside cronjob_bandit24, we will see that we want to write our script.
+
+first we should create a directory in tmp directory and then we should create a file in it, give permissions to all members for the created file.
+
+now move to the directory shown in the executable file.
+
+Then create a file and use nano editor to write the code in it.
+
+code = etc/bandit_pass/bandit24 > tmp/"created directory"/"created file"  --> this code will redirected the password to the file.
+
+We can check our password in that file after few seconds.
+
+password = `VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar`
