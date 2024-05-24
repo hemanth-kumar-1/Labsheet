@@ -117,3 +117,87 @@ done | nc localhost 30002 > test  #it is the file where the password goes`
 then - cat test | grep password.
 
 password = 'p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d'
+
+## Level -25 & 26
+
+In this level we will find a sshkey of next level.
+
+we see that the bash file of next level is not a regular bash and something else(given in the website).
+
+so to see the bash file of the level we prompt `cat /etc/passwd | grep bandit26`.
+
+we will see a diff bash that is bin/passwd/showtext.
+
+when we open the file showtext will see a executable file. 
+
+in that file we see a command more. we should know about more command for solving next level.
+
+when we login to the bandit26 using the key we got, we will be logged out automatically.
+
+here where more works, we will now shrink the size of terminal, then try to login.
+
+Here more command waits for our input, so type 'v' to enter the edit mode.
+
+Now in the editor we can type :set shell=/bin/bash and hit enter after that type :!cat /etc/bandit_pass/bandit26 to get bandit26 password. 
+
+if we type `:!ls` to see files here we will notice a executable file 'bandit27-do'.
+
+now if we write `:!./bandit27-do cat /etc/bandit_pass/bandit27`, we will get the password for bandit27 the next level.
+
+password of bandit25 = `c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1`
+
+password of badnit26 = `YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS`
+
+## Level -27
+we should copy a file from a github repositry.
+
+we should create a tmp directory for our work space because we can't make editing in home directory.
+
+After creating the directory we can clone the directory using git clone command.
+
+`git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo`
+
+Here we specify the port number using ':'.
+
+It will store the copied file in repo directory and we can read the password from it.
+
+password = `AVanL161y9rsbcJIsFHuw35rjaOM19nR`.
+
+## Level -28
+Same as above we clone the git repository .
+
+`ssh://bandit28-git@localhost:2220/home/bandit28-git/repo`
+
+When we move to repo directory we can see a file named `README.md`.
+
+When we open it we see the password is like `xxxxxxx`.
+
+some body had changed the repo so to see what are the changes made and when are they we can use `git log` command.
+
+we can use `git show "provide the hash code"`
+
+password = `tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S`
+
+## Level -29
+Same after connecting we clone the git repository using `git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo`
+
+After that in repo directory we see README.md file in it we see the password will be like "<no passwords in production".
+
+when we run git log for changes we will see only the username is changed.
+
+Then i checked the branches with git branch -av.
+
+we will see a list, when we check remotes/origin/dev using `git checkout remotes/origin/dev`.
+
+we will see the password is updated in readme file.
+
+password = `xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS`
+
+## Level -30
+Same after cloning the github repo, and when we see the information its just some ascii text.
+
+when we check for the tags it had, we will find the tag secret.
+
+when we check for it by git show secret. The password will display.
+
+password = `OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt`
