@@ -101,9 +101,11 @@ password = `VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar`
 for this level we should write our own shell script code to submit all the possible numbers with the previous password.
 
 the code(we will write this code in tmp directory):
+
 `#!/bin/bash
 
 count=0000
+
 passwd="VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar"
 
 while [ "$count" -le 10000 ]
